@@ -6,6 +6,7 @@ restaurantes = [{'nome':'restaurante XP','categoria':'Alimento','ativo':False},
 
 def exibir_nome_do_programa():
  ''' Está função é responsável por exibir o nome do programa
+ 
  Output:
  -Exibi nome do programa
  '''
@@ -13,6 +14,7 @@ def exibir_nome_do_programa():
  """)
 def exibir_opcoes():
  '''Está função é responsável por exibir as opções
+
 Output:
 -Mostra as opções 
 '''
@@ -23,15 +25,17 @@ Output:
  
 def finaliza_app():
    '''Está função é responsavél por finalizar app
+
    Output:
    -Encerra o app
    '''
    exibir_subtitulo('Finalizar App')
 
 def voltar_ao_menu_principal():
-   '''Está função é ressponavél por voltar ao menu principal
+   '''Está função é responsavél por voltar ao menu principal
    Inputs:
    -enter
+
    Output:
    -Volta no menu principal 
    '''
@@ -39,10 +43,20 @@ def voltar_ao_menu_principal():
    main()
    
 def opcao_invalida():
+   '''Está função é responsaveĺ por mostrar a opção inválida
+
+     Output:
+       -exibi a opção inválida
+           '''
    print('Opção invalida!\n')
    voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
+    '''Está função é responsavél por exibir o subtitulo
+
+    Output:
+    -Mostra o subtitulo
+    '''
     os.system('clear') #os.system('clear')
     linha = '*' * (len(texto))
     print(linha)
@@ -109,6 +123,11 @@ def alternar_estado_restaurante():
    voltar_ao_menu_principal()  
     
 def escolher_opcao():
+ '''Está função é responsavél por escolher a opção
+
+ Output:
+ -escolha a opção
+ '''
  try:
     opcao_escolhida = int(input('Escolha uma opção: '))
 
@@ -127,6 +146,11 @@ def escolher_opcao():
     opcao_invalida()        
 
 def main():
+   '''Está função é responsavél por garantir que as funções sejam executadas quando o programa for iniciado
+   
+   Output:
+   -faz as funções ser executadas corretamente
+   '''
    os.system('clear')
    exibir_nome_do_programa()
    exibir_opcoes()
