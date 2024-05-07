@@ -22,10 +22,19 @@ Output:
  print('4. Sair')
  
 def finaliza_app():
-   '''está função'''
+   '''Está função é responsavél por finalizar app
+   Output:
+   -Encerra o app
+   '''
    exibir_subtitulo('Finalizar App')
 
 def voltar_ao_menu_principal():
+   '''Está função é ressponavél por voltar ao menu principal
+   Inputs:
+   -enter
+   Output:
+   -Volta no menu principal 
+   '''
    input('\n Digite a tecla "Enter" para voltar ao menu principal')
    main()
    
